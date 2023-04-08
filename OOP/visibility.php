@@ -12,7 +12,12 @@ class Produk{
         $this->penerbit = $penerbit;
         $this->harga = $harga;
     }
-
+    public function getJudul(){
+        return $this->judul; 
+    }
+    public function setJudul($judul){
+        $this->judul = $judul;
+    }
 }
 
 class Komik extends Produk {
@@ -22,13 +27,6 @@ class Komik extends Produk {
     parent::__construct($judul, $penulis, $penerbit, $harga);
     
     $this->jmlHalaman=$jmlHalaman;
-}
-
-public function getJudul(){
-    return $this->judul; 
-}
-public function setJudul($judul){
-    $this->judul = $judul;
 }
 
     public function getInfoProduk(){
@@ -68,10 +66,9 @@ class CetakInfoProduk {
 $produk1 = new Komik("Naruto", "Mahashi Nishimoto", "Erlangga", 10000, 150);
 $produk2 = new Game("Astronomy Game", "Neil Amstrong", "Ilmuan Computer", 20000, 50);
 
-//yang muncul bukan dragon ball sifatnya private
+
 $produk1->setJudul("Dragon Ball");
-//bisa diatur karena di class komik itu bisa modif judul
-$produk1->judul = "Pororo";
+$produk1->judul = "shincan";
 
 
 // $produk2->setJudul(minasha);
