@@ -66,13 +66,9 @@ class CetakInfoProduk {
 $produk1 = new Komik("Naruto", "Mahashi Nishimoto", "Erlangga", 10000, 150);
 $produk2 = new Game("Astronomy Game", "Neil Amstrong", "Ilmuan Computer", 20000, 50);
 
-
 $produk1->setJudul("Dragon Ball");
 $produk1->judul = "shincan";
 
-
-// $produk2->setJudul(minasha);
-//tidak bisa muncul dikarenakan di produk2 tidak ada method buat set judul
  
 echo $produk1->getJudul();
 
