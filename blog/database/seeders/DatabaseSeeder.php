@@ -25,6 +25,13 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('12345')
         ]);
 
+        User::create([
+            'name' => 'Soobin',
+            'email' => 'soobinz@gmail.com',
+            'password' => bcrypt('12345')
+        ]);
+
+
         Category::create([
             'name' => 'Web Programming',
             'slug' => 'web-programming'
@@ -33,6 +40,15 @@ class DatabaseSeeder extends Seeder
         Category::create([
             'name' => 'Personal',
             'slug' => 'personal'
+        ]);
+
+        Post::create([
+            'title' => 'Judul Ke Pertama',
+            'slug' => 'judul-ke-pertama',
+            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam veniam beatae dolore eos vitae exercitationem dolores nulla',
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam veniam beatae dolore eos vitae exercitationem dolores nulla ab omnis quisquam consectetur nihil neque cupiditate maxime velit vel commodi, a voluptate deleniti! Voluptatibus amet, laboriosam incidunt iusto id eveniet illum modi harum reiciendis beatae sint sequi rerum, sed delectus rem illo hic? Quos odit sed nemo! Distinctio iste ipsa perspiciatis ut! Asperiores tenetur animi sequi laborum, nostrum suscipit fuga cum hic non placeat saepe vero architecto nam repellendus repudiandae iste! Doloribus, soluta consequatur? Dolor odit doloribus nobis numquam libero velit voluptatum enim, quas voluptates quod, facilis quis quam et distinctio?.',
+            'category_id' => 1,
+            'user_id' => 1
         ]);
 
         Post::create([
@@ -51,6 +67,15 @@ class DatabaseSeeder extends Seeder
             'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam veniam beatae dolore eos vitae exercitationem dolores nulla ab omnis quisquam consectetur nihil neque cupiditate maxime velit vel commodi, a voluptate deleniti! Voluptatibus amet, laboriosam incidunt iusto id eveniet illum modi harum reiciendis beatae sint sequi rerum, sed delectus rem illo hic? Quos odit sed nemo! Distinctio iste ipsa perspiciatis ut! Asperiores tenetur animi sequi laborum, nostrum suscipit fuga cum hic non placeat saepe vero architecto nam repellendus repudiandae iste! Doloribus, soluta consequatur? Dolor odit doloribus nobis numquam libero velit voluptatum enim, quas voluptates quod, facilis quis quam et distinctio?.',
             'category_id' => 2,
             'user_id' => 1
+        ]);
+
+        Post::create([
+            'title' => 'Judul Ke Empat',
+            'slug' => 'judul-ke-empat',
+            'excerpt' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam veniam beatae dolore eos vitae exercitationem dolores nulla',
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam veniam beatae dolore eos vitae exercitationem dolores nulla ab omnis quisquam consectetur nihil neque cupiditate maxime velit vel commodi, a voluptate deleniti! Voluptatibus amet, laboriosam incidunt iusto id eveniet illum modi harum reiciendis beatae sint sequi rerum, sed delectus rem illo hic? Quos odit sed nemo! Distinctio iste ipsa perspiciatis ut! Asperiores tenetur animi sequi laborum, nostrum suscipit fuga cum hic non placeat saepe vero architecto nam repellendus repudiandae iste! Doloribus, soluta consequatur? Dolor odit doloribus nobis numquam libero velit voluptatum enim, quas voluptates quod, facilis quis quam et distinctio?.',
+            'category_id' => 2,
+            'user_id' => 2
         ]);
     }
 }
